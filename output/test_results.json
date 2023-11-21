@@ -1,1 +1,133 @@
-[]
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-users-fake-api;create-users",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Create Users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56417898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the request url is \"/api/users\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12029460
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}",
+                "line": 7
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the request payload is the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1933192
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the \"POST\" request is triggered",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 932720661
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the response status code should be \"200\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3834635
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I should see the data in response body",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3523931
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\",\n    \"updatedAt\": \"2023-11-21T08:48:07.529Z\"\n}",
+                "line": 17
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the response payload should match the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1725414
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 596086
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-users-fake-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test Users Fake API",
+    "tags": [],
+    "uri": "features/users.feature"
+  }
+]

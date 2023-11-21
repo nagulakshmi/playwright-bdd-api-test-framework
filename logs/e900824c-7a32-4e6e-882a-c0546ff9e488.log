@@ -1,0 +1,8 @@
+[2023-11-22 02:53:45 [32minfo[39m]: Starting the testsuite execution
+[2023-11-22 02:53:45 [32minfo[39m]: Executing scenario: "Create Users"
+[2023-11-22 02:53:45 [32minfo[39m]: set the api path as := /api/users
+[2023-11-22 02:53:45 [32minfo[39m]: The requet payload is received
+[2023-11-22 02:53:45 [32minfo[39m]: Trigger the POST request from the test suite
+[2023-11-22 02:53:45 [32minfo[39m]: Start processing the "POST" request
+[2023-11-22 02:53:45 [32minfo[39m]: Post method process /api/users
+[2023-11-22 02:53:46 [32minfo[39m]: The status of the test case is:= PASSED

@@ -1,0 +1,4 @@
+[2023-11-22 02:49:09 [32minfo[39m]: set the api path as := /api/users
+[2023-11-22 02:49:09 [32minfo[39m]: The requet payload is received
+[2023-11-22 02:49:09 [32minfo[39m]: Trigger the POST request from the test suite
+[2023-11-22 02:49:09 [32minfo[39m]: Start processing the "POST" request
