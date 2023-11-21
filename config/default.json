@@ -1,0 +1,4 @@
+{
+    "baseUrl": "",
+    "cucumberTimeout": 120000
+}

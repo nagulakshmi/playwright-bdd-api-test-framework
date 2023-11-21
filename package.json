@@ -1,0 +1,31 @@
+{
+  "name": "playwright-bdd-api-test-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ". ./set_env.sh && cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagulakshmi/playwright-bdd-api-test-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagulakshmi/playwright-bdd-api-test-framework/issues"
+  },
+  "homepage": "https://github.com/nagulakshmi/playwright-bdd-api-test-framework#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.4.0",
+    "config": "^3.3.9",
+    "playwright": "^1.40.0",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.3",
+    "@types/uuid": "^9.0.7"
+  }
+}
