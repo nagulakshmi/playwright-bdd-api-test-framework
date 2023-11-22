@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ". ./set_env.sh && cucumber-js",
+    "test:dev": "export NODE_ENV=dev && . ./set_env.sh && cucumber-js",
+    "test:sit": "export NODE_ENV=sit && . ./set_env.sh && cucumber-js",
+    "test:qa": "export NODE_ENV=qa && . ./set_env.sh && cucumber-js",
     "generate:report": "ts-node ./support/report.ts"
   },
   "repository": {
