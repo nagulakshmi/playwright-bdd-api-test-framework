@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ". ./set_env.sh && cucumber-js"
+    "test": ". ./set_env.sh && cucumber-js",
+    "generate:report": "ts-node ./support/report.ts"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@types/config": "^3.3.3",
     "@types/json-query": "^2.2.6",
-    "@types/uuid": "^9.0.7"
+    "@types/uuid": "^9.0.7",
+    "cucumber-html-reporter": "^7.1.1"
   }
 }
