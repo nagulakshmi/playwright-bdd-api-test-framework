@@ -15,6 +15,11 @@
 * dev.json, sit.json, qa.json used to adjust each environment, headless mode and screen settings.
 * info & error logs added into a file for the user reference
 
+#### How to run in Docker?
+* the command `docker build -t cucumber-playwright-bbd-framework .` to build the docker image
+* the command `docker run cucumber-playwright-bbd-framework` used to run docker image
+* docker image used run, generate the report and upload into artifactory
+
 #### Cucumber Default timeout
 * Cucumber default time out setting not working, when it is called from the hooks.
 * Refer the issue here: https://github.com/cucumber/cucumber-js/issues/1610
