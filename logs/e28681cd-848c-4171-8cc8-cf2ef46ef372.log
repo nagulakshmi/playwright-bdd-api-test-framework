@@ -1,0 +1,12 @@
+[2023-11-22 21:51:40 [32minfo[39m]: Starting the testsuite execution
+[2023-11-22 21:51:40 [32minfo[39m]: Executing scenario: "Get all users"
+[2023-11-22 21:51:40 [32minfo[39m]: set the api path as := /api/users?page=2
+[2023-11-22 21:51:40 [32minfo[39m]: Trigger the GET request from the test suite
+[2023-11-22 21:51:40 [32minfo[39m]: Start processing the "GET" request
+[2023-11-22 21:51:40 [32minfo[39m]: Get method process /api/users?page=2
+[2023-11-22 21:51:40 [32minfo[39m]: Verify api response code
+[2023-11-22 21:51:40 [32minfo[39m]: Verify teh payload key value pair
+[2023-11-22 21:51:40 [32minfo[39m]: Verify teh payload key value pair
+[2023-11-22 21:51:40 [32minfo[39m]: Verify teh payload key value pair
+[2023-11-22 21:51:40 [32minfo[39m]: Verify the response payload
+[2023-11-22 21:51:40 [32minfo[39m]: The status of the test case is:= PASSED

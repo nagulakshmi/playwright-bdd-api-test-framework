@@ -1,0 +1,21 @@
+[2023-11-22 19:39:51 [32minfo[39m]: Starting the testsuite execution
+[2023-11-22 19:39:51 [32minfo[39m]: Executing scenario: "Create Users"
+[2023-11-22 19:39:51 [32minfo[39m]: set the api path as := /api/users
+[2023-11-22 19:39:51 [32minfo[39m]: The requet payload is received
+[2023-11-22 19:39:51 [32minfo[39m]: Trigger the POST request from the test suite
+[2023-11-22 19:39:51 [32minfo[39m]: Start processing the "POST" request
+[2023-11-22 19:39:51 [32minfo[39m]: Post method process /api/users
+[2023-11-22 19:39:51 [32minfo[39m]: The status of the test case is:= PASSED
+[2023-11-22 19:39:51 [32minfo[39m]: Executing scenario: "Update Users"
+[2023-11-22 19:39:51 [32minfo[39m]: set the api path as := /api/users/2
+[2023-11-22 19:39:51 [32minfo[39m]: The requet payload is received
+[2023-11-22 19:39:51 [32minfo[39m]: Trigger the PUT request from the test suite
+[2023-11-22 19:39:51 [32minfo[39m]: Start processing the "PUT" request
+[2023-11-22 19:39:51 [32minfo[39m]: Post method process /api/users/2
+[2023-11-22 19:39:52 [32minfo[39m]: The status of the test case is:= PASSED
+[2023-11-22 19:39:52 [32minfo[39m]: Executing scenario: "User not found"
+[2023-11-22 19:39:52 [32minfo[39m]: set the api path as := /api/users/23
+[2023-11-22 19:39:52 [32minfo[39m]: Trigger the GET request from the test suite
+[2023-11-22 19:39:52 [32minfo[39m]: Start processing the "GET" request
+[2023-11-22 19:39:52 [32minfo[39m]: Get method process /api/users/23
+[2023-11-22 19:39:53 [32minfo[39m]: The status of the test case is:= FAILED

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 56417898
+              "duration": 48942461
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12029460
+              "duration": 12804287
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1933192
+              "duration": 1841459
             }
           },
           {
@@ -58,51 +58,38 @@
             },
             "result": {
               "status": "passed",
-              "duration": 932720661
+              "duration": 656173230
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "the response status code should be \"200\"",
+            "name": "the response status code should be \"201\"",
             "match": {
               "location": "setp-definitions/shared_steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3834635
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "I should see the data in response body",
-            "match": {
-              "location": "setp-definitions/shared_steps.ts:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3523931
+              "duration": 7291977
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\",\n    \"updatedAt\": \"2023-11-21T08:48:07.529Z\"\n}",
-                "line": 17
+                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}",
+                "line": 16
               }
             ],
             "keyword": "And ",
-            "line": 16,
+            "line": 15,
             "name": "the response payload should match the following json",
             "match": {
-              "location": "setp-definitions/shared_steps.ts:29"
+              "location": "setp-definitions/shared_steps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1725414
+              "duration": 7691672
             }
           },
           {
@@ -110,7 +97,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 596086
+              "duration": 475898
             }
           }
         ],
@@ -118,6 +105,419 @@
           {
             "name": "@smoke",
             "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-users-fake-api;update-users",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Update Users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2913307
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the request url is \"/api/users/2\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649073
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}",
+                "line": 27
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the request payload is the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 275710
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "the \"PUT\" request is triggered",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 622910345
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the response status code should be \"201\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1316459
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}",
+                "line": 36
+              }
+            ],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the response payload should match the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4241173
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 486971
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-users-fake-api;get-single-user",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Get Single user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2415734
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "the request url is \"/api/users/2\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 340791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "the \"GET\" request is triggered",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172503875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "the response status code should be \"200\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 795855
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"data\": {\n        \"id\": 2,\n        \"email\": \"janet.weaver@reqres.in\",\n        \"first_name\": \"Janet\",\n        \"last_name\": \"Weaver\",\n        \"avatar\": \"https://reqres.in/img/faces/2-image.jpg\"\n    }\n}",
+                "line": 49
+              }
+            ],
+            "keyword": "And ",
+            "line": 48,
+            "name": "the response payload should match the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3775534
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 345455
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 43
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-users-fake-api;user-not-found",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "User not found",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2904744
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 63,
+            "name": "the request url is \"/api/users/23\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 345507
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 64,
+            "name": "the \"GET\" request is triggered",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 603464688
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "the response status code should be \"404\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 884994
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n}",
+                "line": 67
+              }
+            ],
+            "keyword": "And ",
+            "line": 66,
+            "name": "the response payload should match the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3306324
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 389786
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-users-fake-api;get-all-users",
+        "keyword": "Scenario",
+        "line": 73,
+        "name": "Get all users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9221579
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 74,
+            "name": "the request url is \"/api/users?page=2\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371380
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "the \"GET\" request is triggered",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65091789.00000001
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "the response status code should be \"200\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 876906
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "the response payload should match the \"total_pages\" key to be \"2\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9797718
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "the response payload should match the \"total\" key to be \"12\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3759713
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "the response payload should match the \"total\" key to be \"12\"",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3949054
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"page\": 2,\n    \"per_page\": 6,\n    \"total\": 12,\n    \"total_pages\": 2,\n    \"data\": [\n        {\n            \"id\": 7,\n            \"email\": \"michael.lawson@reqres.in\",\n            \"first_name\": \"Michael\",\n            \"last_name\": \"Lawson\",\n            \"avatar\": \"https://reqres.in/img/faces/7-image.jpg\"\n        }\n    ]\n}",
+                "line": 82
+              }
+            ],
+            "keyword": "And ",
+            "line": 81,
+            "name": "the response payload should match the following json",
+            "match": {
+              "location": "setp-definitions/shared_steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3316745
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 377548
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 72
           }
         ],
         "type": "scenario"

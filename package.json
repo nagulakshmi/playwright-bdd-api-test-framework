@@ -18,7 +18,9 @@
   "homepage": "https://github.com/nagulakshmi/playwright-bdd-api-test-framework#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.4.0",
+    "@playwright/test": "^1.40.0",
     "config": "^3.3.9",
+    "json-query": "^2.2.2",
     "playwright": "^1.40.0",
     "ts-node": "^10.9.1",
     "uuid": "^9.0.1",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@types/config": "^3.3.3",
+    "@types/json-query": "^2.2.6",
     "@types/uuid": "^9.0.7"
   }
 }

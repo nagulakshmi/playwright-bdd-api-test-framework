@@ -18,14 +18,17 @@ When('the {string} request is triggered', async (method: string) => {
     await http.processRequest(method)
 });
 
-Then('the response status code should be {string}', function (string) {
-// Write code here that turns the phrase above into concrete actions
+Then('the response status code should be {string}', async (responseCode: string) => {
+    logger.info("Verify api response code")
+    await http.verifyResponseCode(responseCode)
 });
 
-Then('I should see the data in response body', function () {
-// Write code here that turns the phrase above into concrete actions
+Then('the response payload should match the following json', async (payload: string) => {
+    logger.info("Verify the response payload")
+    await http.verifyResponsePayload(payload)
 });
 
-Then('the response payload should match the following json', function (docString) {
-// Write code here that turns the phrase above into concrete actions
+Then('the response payload should match the {string} key to be {string}', async (expectedKey: string, value: string) => {
+    logger.info("Verify teh payload key value pair")
+    await http.verifyResponsePayloadKey(expectedKey, value)
 });
